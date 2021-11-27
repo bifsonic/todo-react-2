@@ -1,0 +1,148 @@
+body {
+  font-family: Roboto;
+  padding: 20px;
+  background-color: #c1c1c1;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar {
+  padding: 15px;
+  list-style-type: none;
+  width: 60px;
+  height: calc(100vh - 40px);
+  margin: 0 20px 0 0;
+  border-radius: 12px;
+  background-color: #252525;
+}
+
+.tasks {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  display: flex;
+  padding: 20px;
+}
+
+.task-form {
+  display: flex;
+  width: 100%;
+  padding: 20px 22px 20px 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.task-textarea {
+  border: none;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  outline: none;
+}
+
+.task-create-btn {
+  background-image: url("https://cdn.zeplin.io/61829399d2ef1c82c7357a9a/assets/9C03E1BE-0377-495C-BA1A-5E1201D7C5C7.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.tag {
+  border: none;
+  border-radius: 10px;
+  background-color: #252525;
+  font-size: 11px;
+  color: white;
+  padding: 8px;
+  margin: 0 5px 0;
+}
+
+.task {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.tags {
+  width: 100%;
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  background-image: url("https://cdn.zeplin.io/61829399d2ef1c82c7357a9a/assets/6423933A-5EFA-4E50-B324-4E7EF924CC6C.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 30px;
+  height: 29px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inbox {
+  background-image: url("https://cdn.zeplin.io/61829399d2ef1c82c7357a9a/assets/DFFCF870-67E9-4E76-97DE-B3C8CB1BF9D1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 24px;
+  height: 23px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.today {
+  background-image: url("https://cdn.zeplin.io/61829399d2ef1c82c7357a9a/assets/3B99F53D-060A-4040-8DBE-7CEB6442230A.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 24px;
+  height: 23px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-radio:checked + label::before {
+  background-color: #252525;
+}
+
+.custom-radio + label {
+  display: inline-flex;
+  user-select: none;
+}
+
+.custom-radio + label::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  border: 3px solid #d8d8d8;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+
+.text {
+  margin: 0;
+}
